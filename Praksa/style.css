@@ -1,0 +1,99 @@
+.container {  display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "Header Header Header"
+	  "Top-Row Top-Row Tekst"
+	  "Bottom-Row Bottom-Row Tekst"
+	  ". . Buttons"
+	  "Footer Footer Footer";
+  }
+  
+  .Header { grid-area: Header; }
+  
+  .Footer { grid-area: Footer; }
+  
+  .Top-Row { grid-area: Top-Row; }
+  
+  .Bottom-Row { grid-area: Bottom-Row; }
+  
+  .Tekst { grid-area: Tekst; }
+  
+  .Buttons { grid-area: Buttons; }
+  
+
+
+body {
+	display: flex;
+	justify-content: center;
+}
+.sadrzaj {
+	width: 60%;
+	margin: auto;
+
+
+}
+.Top-Row {
+	display: flex !important;
+	justify-content: center;
+	height: 200px;
+	border: 1px solid white;
+	border-spacing: 5px;
+	width: 180px;
+	height: 200px;
+	left: 100px;
+	top: 0px;
+}
+.Bottom-Row {
+	display: flex !important;
+	justify-content: center;
+	height: 200px;
+	border: 1px solid white;
+	border-spacing: 5px;
+	width: 180px;
+	height: 200px;
+	left: 100px;
+	top: 0px;
+}
+.naslov {
+width: 300.93px;
+height: 120px;
+left: 0px;
+top: 0px;
+margin: auto;
+
+font-family: 'SourceSansPro';
+font-size: 30px;
+line-height: 50px;
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.2px;
+
+color: #134880;
+}
+.Tekst{
+margin: auto;
+width: 300.93px;
+height: 156px;
+left: 0px;
+top: 140px;
+text-align: left;
+font-family: 'SourceSansPro';
+font-size: 18px;
+line-height: 26px;
+display: flex;
+align-items: left;
+letter-spacing: -0.2px;
+
+color: #484A4C;
+}
+
+.Tipka1, .Tipka2 {
+	margin: auto;
+	background-color: white;
+	color: black;
+		display: block;
+	  }
+
